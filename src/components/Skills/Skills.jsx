@@ -2,10 +2,10 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
+import SkillsImg from '../Image/SkillsImg';
 import PortfolioContext from '../../context/context';
 
-const About = () => {
+const Skills = () => {
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about;
 
@@ -25,44 +25,32 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
-        <Row className="about-wrapper">
+        <Title title="Skills" />
+        <Row className="skills-wrapper ">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+              <div className="skills-wrapper__image">
+                <SkillsImg alt="technology image" filename={img} />
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
+              <div className="skills-wrapper__info">
+                <p className="skills-wrapper__info-text">
                   {paragraphOne ||
                     ''}
                 </p>
-                <p className="about-wrapper__info-text">
+                <p className="skills-wrapper __info-text">
                   {paragraphTwo ||
                     ''}
                 </p>
-                <p className="about-wrapper__info-text">
+                <p className="skills-wrapper__info-text">
                   {paragraphThree || ''}
                 </p>
-                <p className="about-wrapper__info-text">
+                <p className="skills-wrapper__info-text">
                   {paragraphFour|| ''}
                 </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
               </div>
             </Fade>
           </Col>
@@ -72,4 +60,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Skills;

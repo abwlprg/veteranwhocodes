@@ -120,11 +120,11 @@ export const heroData = {
 
 ```javascript
 export const aboutData = {
-  img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
+  img: 'https://i.imgur.com/IVAgq8m.jpg', // put your profile image (recommended aspect radio: square)
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'src/pdf/Adrian Calvache Resume.pdf', // if no resume, the button will not show up
 };
 ```
 
@@ -207,7 +207,7 @@ By setting to `false` it will hide the GitHub stars/fork buttons
 
 ```javascript
 export const githubButtons = {
-  isEnabled: true, // true is the default value
+  isEnabled: false, // true is the default value
 };
 ```
 
