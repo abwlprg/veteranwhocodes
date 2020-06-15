@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
+import ResumePdf from '../PDF/ResumePdf';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
@@ -53,12 +54,7 @@ const About = () => {
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
+                  <ResumePdf alt="profile picture" filename={pdf} />
                       Resume
                     </a>
                   </span>

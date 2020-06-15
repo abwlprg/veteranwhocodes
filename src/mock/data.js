@@ -22,7 +22,7 @@ export const aboutData = {
   paragraphTwo: 'I was a Aerographers Mate Third Class in the U.S.Navy. I served honorably for 6 years.',
   paragraphThree: 'Graduated John Jay College of Criminal Justice but learned Web Development from General Assembly. I also took Computer Science Classes at BMCC.',
   paragraphFour: '',
-  resume: 'src/pages/Adrian_Calvache_Resume.pdf', // if no resume, the button will not show up
+  resume: 'src/pdf/AdrianCalvacheResume.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -67,18 +67,72 @@ export const projectsData = [
 
 export const skillsData = [
   {
-    img: 'html5.png',
+    id: uuidv1(),
     title: 'HTML5',
-    info: '',
+    img: 'html5.png',
+    info: '3 Years',
   },
-
+  {
+    id: uuidv1(),
+    title: 'CSS3',
+    img: 'css3.png',
+    info: '3 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'Python',
+    img: 'python.png',
+    info: '2 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'MongoDB',
+    img: 'mongodb.png',
+    info: '2 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'Javascript',
+    img: 'javascript.png',
+    info: '3 Yerars',
+  },
+  {
+    id: uuidv1(),
+    title: 'Node.Js',
+    img: 'node.png',
+    info: '2 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'MYSQL',
+    img: 'mysql.png',
+    info: '2 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'React.Js',
+    img: 'react.png',
+    info: '2 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'Java',
+    img: 'java.png',
+    info: '1 Year',
+  },
+  {
+    id: uuidv1(),
+    title: 'C++',
+    img: 'C++.png',
+    info: '1 Year',
+  },
 ];
 
 
 // CONTACT DATA
 export const contactData = {
   cta: '',
-  btn: 'r',
+  btn: 'Email Me',
   email: 'adrian.calvache1@gmail.com',
 };
 

@@ -1,13 +1,15 @@
-import React, { useContext, useState, useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
+import React, { useContext, useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
+import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import SkillsImg from '../Image/SkillsImg';
-import PortfolioContext from '../../context/context';
+import Tilt from 'react-tilt';
+
 
 const Skills = () => {
-  const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about;
+  const { skills } = useContext(PortfolioContext);
+  const { id, title, info, img } = skills;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -21,40 +23,55 @@ const Skills = () => {
       setIsDesktop(false);
     }
   }, []);
-
   return (
-    <section id="about">
+    <section id="skills">
       <Container>
-        <Title title="Skills" />
-        <Row className="skills-wrapper ">
-          <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="skills-wrapper__image">
-                <SkillsImg alt="technology image" filename={img} />
-              </div>
-            </Fade>
-          </Col>
-          <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="skills-wrapper__info">
-                <p className="skills-wrapper__info-text">
-                  {paragraphOne ||
-                    ''}
-                </p>
-                <p className="skills-wrapper __info-text">
-                  {paragraphTwo ||
-                    ''}
-                </p>
-                <p className="skills-wrapper__info-text">
-                  {paragraphThree || ''}
-                </p>
-                <p className="skills-wrapper__info-text">
-                  {paragraphFour|| ''}
-                </p>
-              </div>
-            </Fade>
-          </Col>
-        </Row>
+        <div className="skills-wrapper">
+          <Title title="Skills" />
+          {skills.map(skills => {
+            const { id, title, info, img } = skills;
+            return (
+              <Row key={id}>
+                <Col lg={4} sm={12}>
+                  <Fade
+                    left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                    <Tilt
+                      options={{
+                        reverse: false,
+                        max: 8,
+                        perspective: 1000,
+                        scale: 1,
+                        speed: 300,
+                        transition: true,
+                        axis: null,
+                        reset: true,
+                        easing: 'cubic-bezier(.03,.98,.52,.99)',
+                      }}
+                    >
+                      <div className="skills-wrapper__text">
+                        <div data-tilt className="thumbnail rounded">
+                          <h3 className="skills-wrapper__text-title">{title || ''}</h3>
+                          <SkillsImg alt={title} filename={img} />
+                          <p>
+                            {info ||
+                              ''}
+                          </p>
+                          {/* This will be a buffer of sorts. */}
+                          <div className="skills-wrapper__text-title"></div>
+                        </div>
+                      </div>
+                    </Tilt>
+                  </Fade>
+                </Col>
+              </Row>
+            );
+          })}
+        </div>
       </Container>
     </section>
   );

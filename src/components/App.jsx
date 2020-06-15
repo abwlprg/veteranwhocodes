@@ -14,9 +14,9 @@ function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
+  const [skills, setSkills] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
-  const [skills, setSkills] = useState({});
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -24,15 +24,15 @@ function App() {
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
-    setSkills({ ...skillsData });
+    setSkills([...skillsData]);
   }, []);
 
   return (
     <PortfolioProvider value={{ hero, about, projects, skills, contact, footer }}>
       <Hero />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </PortfolioProvider>
