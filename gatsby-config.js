@@ -20,14 +20,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/pdf/`,
-      },
-    },
-    `gatsby-transformer-pdf`,
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Veteran Who Codes`,
