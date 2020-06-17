@@ -22,7 +22,7 @@ export const aboutData = {
   paragraphTwo: 'I was a Aerographers Mate Third Class in the U.S.Navy. I served honorably for 6 years.',
   paragraphThree: 'Graduated John Jay College of Criminal Justice but learned Web Development from General Assembly. I also took Computer Science Classes at BMCC.',
   paragraphFour: '',
-  resume: 'src/pdf/AdrianCalvacheResume.pdf', // if no resume, the button will not show up
+  resume: 'https://www.yumpu.com/en/document/view/63513685/adrian-calvache-resume', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA

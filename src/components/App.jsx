@@ -6,6 +6,7 @@ import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
+
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, skillsData, contactData, footerData } from '../mock/data';
