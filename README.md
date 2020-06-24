@@ -124,7 +124,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'src/pdf/Adrian Calvache Resume.pdf', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
 };
 ```
 

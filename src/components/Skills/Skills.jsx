@@ -32,7 +32,7 @@ const Skills = () => {
             const { id, title, info, img } = skills;
             return (
               <Row key={id}>
-                <Col lg={4} sm={12}>
+              <Col lg={6} sm={10}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -40,32 +40,52 @@ const Skills = () => {
                     delay={500}
                     distance="30px"
                   >
-                    <Tilt
-                      options={{
-                        reverse: false,
-                        max: 8,
-                        perspective: 1000,
-                        scale: 1,
-                        speed: 300,
-                        transition: true,
-                        axis: null,
-                        reset: true,
-                        easing: 'cubic-bezier(.03,.98,.52,.99)',
-                      }}
-                    >
-                      <div className="skills-wrapper__text">
-                        <div data-tilt className="thumbnail rounded">
-                          <h3 className="skills-wrapper__text-title">{title || ''}</h3>
-                          <SkillsImg alt={title} filename={img} />
-                          <p>
-                            {info ||
-                              ''}
-                          </p>
-                          {/* This will be a buffer of sorts. */}
-                          <div className="skills-wrapper__text-title"></div>
-                        </div>
+                    <div className="skills-wrapper__text">
+                      <h1 className="skills-wrapper__text-title">{title || ''}</h1>
+                      <div>
+                        <h2>
+                          {info ||
+                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                        </h2>
                       </div>
-                    </Tilt>
+                    </div>
+                  </Fade>
+                </Col>
+
+                <Col lg={4} sm={10}>
+                  <Fade
+                    right={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={1000}
+                    distance="30px"
+                  >
+                    <div className="skills-wrapper__image">
+                      <a
+                        href=''
+                        target="_blank"
+                        aria-label=""
+                        rel=""
+                      >
+                        <Tilt
+                          options={{
+                            reverse: false,
+                            max: 8,
+                            perspective: 1000,
+                            scale: 1,
+                            speed: 300,
+                            transition: true,
+                            axis: null,
+                            reset: true,
+                            easing: 'cubic-bezier(.03,.98,.52,.99)',
+                          }}
+                        >
+                          <div data-tilt className="thumbnail rounded">
+                            <SkillsImg alt={title} filename={img} />
+                          </div>
+                        </Tilt>
+                      </a>
+                    </div>
                   </Fade>
                 </Col>
               </Row>
@@ -73,6 +93,7 @@ const Skills = () => {
           })}
         </div>
       </Container>
+      <hr></hr>
     </section>
   );
 };
