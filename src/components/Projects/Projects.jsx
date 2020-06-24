@@ -108,6 +108,7 @@ const Projects = () => {
                   </Fade>
                 </Col>
               </Row>
+              
             );
           })}
         </div>
