@@ -32,27 +32,7 @@ const Skills = () => {
             const { id, title, info, img } = skills;
             return (
               <Row key={id}>
-              <Col lg={6} sm={10}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="skills-wrapper__text">
-                      <h1 className="skills-wrapper__text-title">{title || ''}</h1>
-                      <div>
-                        <h2>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </h2>
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
-
-                <Col lg={4} sm={10}>
+                <Col lg={4} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -83,8 +63,30 @@ const Skills = () => {
                           <div data-tilt className="thumbnail rounded">
                             <SkillsImg alt={title} filename={img} />
                           </div>
+                          <br/>
+                          <br/>
                         </Tilt>
                       </a>
+                    </div>
+                  </Fade>
+                </Col>
+                <hr/>
+                <Col lg={4} sm={12}>
+                  <Fade
+                    left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                    <div className="skills-wrapper__text">
+                      <h1 className="skills-wrapper__text-title"><u>{title || ''}</u></h1>
+                      <div>
+                        <h2>
+                          {info ||
+                            ''}
+                        </h2>
+                      </div>
                     </div>
                   </Fade>
                 </Col>

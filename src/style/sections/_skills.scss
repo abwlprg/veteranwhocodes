@@ -7,9 +7,10 @@
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
-  .skills-wrapper {
+  .project-wrapper {
     margin-bottom: 15rem;
 
     @include respond(phone) {
@@ -25,7 +26,7 @@
     }
 
     &__text {
-      text-align: left;
+      text-align: right;
 
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
@@ -50,7 +51,7 @@
     }
 
     &__image {
-      width: 90%;
+      width: 60%;
       margin: 0 auto;
 
       @include respond(tab-land) {

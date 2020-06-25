@@ -20,9 +20,9 @@ export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: 'My name is Adrian Calvache, and I am a Junior Developer at Pathfinder.Vet.',
   paragraphTwo: 'I was a Aerographers Mate Third Class in the U.S.Navy. I served honorably for 6 years.',
-  paragraphThree: 'Graduated John Jay College of Criminal Justice but learned Web Development from General Assembly. I also took Computer Science Classes at BMCC.',
-  paragraphFour: '',
-  resume: 'https://www.yumpu.com/en/document/view/63513685/adrian-calvache-resume', // if no resume, the button will not show up
+  paragraphThree: 'Graduated John Jay College of Criminal Justice but learned Web Development from General Assembly. I also took Computer Science Classes at BMCC just for the hell of it.',
+  paragraphFour: 'In my spare time I love to do photography and weightlift heavy things (in hopes to one day hope to compete in a strongman competion) .',
+  resume: '/static/7e30f0e0b43451d78a9902ee94de8e6c/AdrianCalvacheResume.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -80,6 +80,18 @@ export const skillsData = [
   },
   {
     id: uuidv1(),
+    title: 'Javascript',
+    img: 'javascript.png',
+    info: '3 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'React.Js',
+    img: 'react.png',
+    info: '2 Years',
+  },
+  {
+    id: uuidv1(),
     title: 'Python',
     img: 'python.png',
     info: '2 Years',
@@ -89,12 +101,6 @@ export const skillsData = [
     title: 'MongoDB',
     img: 'mongodb.png',
     info: '2 Years',
-  },
-  {
-    id: uuidv1(),
-    title: 'Javascript',
-    img: 'javascript.png',
-    info: '3 Yerars',
   },
   {
     id: uuidv1(),
@@ -110,9 +116,9 @@ export const skillsData = [
   },
   {
     id: uuidv1(),
-    title: 'React.Js',
-    img: 'react.png',
-    info: '2 Years',
+    title: 'Graphql',
+    img: 'graphql.png',
+    info: '1.5 Years',
   },
   {
     id: uuidv1(),
