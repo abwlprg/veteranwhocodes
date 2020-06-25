@@ -71,7 +71,7 @@ const Skills = () => {
                   </Fade>
                 </Col>
                 <hr/>
-                <Col lg={4} sm={12}>
+                <Col lg={4} sm={14}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}

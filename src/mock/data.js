@@ -132,6 +132,18 @@ export const skillsData = [
     img: 'C++.png',
     info: '1 Year',
   },
+  {
+    id: uuidv1(),
+    title: 'Docker',
+    img: 'docker.png',
+    info: '1 Year',
+  },
+  {
+    id: uuidv1(),
+    title: 'Bootstrap',
+    img: 'bootstrap.png',
+    info: '3 Years',
+  },
 ];
 
 
