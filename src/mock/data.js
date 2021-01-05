@@ -19,10 +19,13 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: 'My name is Adrian Calvache, and I am a Junior Developer at Pathfinder.Vet.',
-  paragraphTwo: 'I was a Aerographers Mate Third Class in the U.S.Navy. I served honorably for 6 years.',
-  paragraphThree: 'Graduated John Jay College of Criminal Justice but learned Web Development from General Assembly. I also took Computer Science Classes at BMCC just for the hell of it.',
-  paragraphFour: 'In my spare time I love to do photography and weightlift heavy things (in hopes to one day hope to compete in a strongman competion) .',
-  resume: '/static/7e30f0e0b43451d78a9902ee94de8e6c/AdrianCalvacheResume.pdf', // if no resume, the button will not show up
+  paragraphTwo:
+    'I was a Aerographers Mate Third Class in the U.S.Navy. I served honorably for 6 years.',
+  paragraphThree:
+    'Graduated John Jay College of Criminal Justice but learned Web Development from General Assembly. I also took Computer Science Classes at BMCC just for the hell of it.',
+  paragraphFour:
+    'In my spare time I love to do photography and weightlift heavy things (in hopes to one day hope to compete in a strongman competion) .',
+  resume: '/static/7e30f0e0b43451d78a9902ee94de8e6c/AdrianC_2021_Resume.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -31,7 +34,8 @@ export const projectsData = [
     id: uuidv1(),
     img: 'pathfinder.png',
     title: 'Pathfinder',
-    info: 'I use Node.js with a Micro-Service Architecture and MongoDB to help veterans rate and rank services through out the U.S.',
+    info:
+      'I use Node.js with a Micro-Service Architecture and MongoDB to help veterans rate and rank services through out the U.S.',
     info2: 'Work remotely and have two interns working under me.',
     url: 'https://www.pathfinder.vet/',
     repo: '', // if no repo, the button will not show up
@@ -145,7 +149,6 @@ export const skillsData = [
     info: '3 Years',
   },
 ];
-
 
 // CONTACT DATA
 export const contactData = {
