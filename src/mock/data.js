@@ -25,7 +25,7 @@ export const aboutData = {
     'Graduated John Jay College of Criminal Justice but learned Web Development from General Assembly. I also took Computer Science Classes at BMCC just for the hell of it.',
   paragraphFour:
     'In my spare time I love to do photography and weightlift heavy things (in hopes to one day hope to compete in a strongman competion) .',
-  resume: '/static/7e30f0e0b43451d78a9902ee94de8e6c/AdrianC_2021_Resume.pdf', // if no resume, the button will not show up
+  resume: '/static/35e73e00cc8459ebb2415902787edcf3/AdrianC_2021_Resume.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
