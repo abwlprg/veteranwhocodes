@@ -25,7 +25,7 @@
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-pdf": "^1.3.5",
     "gatsby-transformer-sharp": "^2.3.13",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-github-btn": "^1.1.1",
