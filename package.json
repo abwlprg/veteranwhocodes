@@ -48,7 +48,7 @@
     "husky": "^4.2.1",
     "jquery": "^3.5.1",
     "lint-staged": "^10.0.2",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "optimist": "^0.6.1",
     "pdf2json": "^1.2.0",
     "popper": "^1.0.1",
