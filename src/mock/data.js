@@ -18,14 +18,14 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: 'My name is Adrian Calvache, and I am a Junior Developer at Pathfinder.Vet.',
+  paragraphOne: 'My name is Adrian Calvache, and I am a Software Engineer.',
   paragraphTwo:
     'I was a Aerographers Mate Third Class in the U.S.Navy. I served honorably for 6 years.',
   paragraphThree:
     'Graduated John Jay College of Criminal Justice but learned Web Development from General Assembly. I also took Computer Science Classes at BMCC just for the hell of it.',
-  paragraphFour:
-    'In my spare time I love to do photography and weightlift heavy things (in hopes to one day hope to compete in a strongman competion) .',
-  resume: '/static/35e73e00cc8459ebb2415902787edcf3/AdrianC_2021_Resume.pdf', // if no resume, the button will not show up
+  paragraphFour: 'I am  employed at J.P. Morgan & Chase as a Data Engineer working with Amazon Web Services and Pyspark on a daily basis.',
+  paragraphFive: 'In my spare time I love to do photography and do compete in weightlifting.',
+  resume: '/static/35e73e00cc8459ebb2415902787edcf3/AdrianCalvacheResume2023.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -68,8 +68,47 @@ export const projectsData = [
     repo: 'https://github.com/abwlprg/bahmap', // if no repo, the button will not show up
   },
 ];
+export const jpmcSkillsData = [
+  {
+    id: uuidv1(),
+    title: 'Python',
+    img: 'python.png',
+    info: '3 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'Java',
+    img: 'java.png',
+    info: '1 Year',
+  },
+
+];
 
 export const skillsData = [
+  {
+    id: uuidv1(),
+    title: 'Amazon Web Services',
+    img: 'aws.png',
+    info: '2 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'Python',
+    img: 'python.png',
+    info: '3 Years',
+  },
+  {
+    id: uuidv1(),
+    title: 'Pyspark',
+    img: 'pyspark.png',
+    info: '1 Year',
+  },
+  {
+    id: uuidv1(),
+    title: 'Java',
+    img: 'java.png',
+    info: '1 Year',
+  },
   {
     id: uuidv1(),
     title: 'HTML5',
@@ -96,12 +135,6 @@ export const skillsData = [
   },
   {
     id: uuidv1(),
-    title: 'Python',
-    img: 'python.png',
-    info: '2 Years',
-  },
-  {
-    id: uuidv1(),
     title: 'MongoDB',
     img: 'mongodb.png',
     info: '2 Years',
@@ -123,24 +156,6 @@ export const skillsData = [
     title: 'Graphql',
     img: 'graphql.png',
     info: '1.5 Years',
-  },
-  {
-    id: uuidv1(),
-    title: 'Java',
-    img: 'java.png',
-    info: '1 Year',
-  },
-  {
-    id: uuidv1(),
-    title: 'C++',
-    img: 'C++.png',
-    info: '1 Year',
-  },
-  {
-    id: uuidv1(),
-    title: 'Docker',
-    img: 'docker.png',
-    info: '1 Year',
   },
   {
     id: uuidv1(),

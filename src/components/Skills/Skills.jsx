@@ -26,8 +26,9 @@ const Skills = () => {
   return (
     <section id="skills">
       <Container>
+        {/* Coding Skill */}
         <div className="skills-wrapper">
-          <Title title="Skills" />
+          <Title title="Coding Skills" />
           {skills.map(skills => {
             const { id, title, info, img } = skills;
             return (
@@ -51,7 +52,7 @@ const Skills = () => {
                           options={{
                             reverse: false,
                             max: 8,
-                            perspective: 1000,
+                            perspective: 900,
                             scale: 1,
                             speed: 300,
                             transition: true,
